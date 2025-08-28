@@ -20,7 +20,10 @@ jobs:
         test-name: Caso 1
         setup-command: ''
         command: python classifica_triangulo.py
-        input: 1 3 5
+        input: |-
+          1
+          3
+          5
         expected-output: Não forma triângulo
         comparison-method: contains
         timeout: 5
@@ -31,7 +34,10 @@ jobs:
         test-name: Caso 2
         setup-command: ''
         command: python classifica_triangulo.py
-        input: 7 10 7
+        input: |-
+          7
+          10
+          7
         expected-output: isósceles
         comparison-method: contains
         timeout: 5
@@ -42,7 +48,10 @@ jobs:
         test-name: Caso 3
         setup-command: ''
         command: python classifica_triangulo.py
-        input: 10 15 20
+        input: |-
+          10
+          15
+          20
         expected-output: escaleno
         comparison-method: contains
         timeout: 5
@@ -53,7 +62,10 @@ jobs:
         test-name: Caso 4
         setup-command: ''
         command: python classifica_triangulo.py
-        input: 100 100 100
+        input: |-
+          100
+          100
+          100
         expected-output: equilátero
         comparison-method: contains
         timeout: 5
